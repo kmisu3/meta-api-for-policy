@@ -1,1 +1,96 @@
-<p>This application is currently in development and is intended for personal testing purposes only. No personal data is collected, stored, or shared with third parties.</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="mx-auto flex max-w-3xl flex-col gap-8 p-4">
+        <div class="space-y-6">
+            <h1 class="text-3xl font-bold text-gray-900">プライバシーポリシー</h1>
+            
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                <p class="text-yellow-800 font-semibold">
+                    ⚠️ テスト環境について
+                </p>
+                <p class="text-yellow-700 mt-2">
+                    本システムは開発・テスト用途で構築されており、実際の商用利用は行っておりません。
+                </p>
+            </div>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-gray-800">1. 収集する情報</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p>当システムでは、以下の情報を収集する場合があります：</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Instagram アカウント情報（ユーザー名、プロフィール情報）</li>
+                        <li>受信したメッセージの内容</li>
+                        <li>自動返信の履歴</li>
+                        <li>システム利用時のアクセスログ</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-gray-800">2. 情報の利用目的</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p>収集した情報は以下の目的で利用します：</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Instagram メッセージの自動返信機能の提供</li>
+                        <li>システムの動作確認・改善</li>
+                        <li>技術的な問題の解決・サポート</li>
+                        <li>テスト・開発目的での分析</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-gray-800">3. 情報の管理・保護</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>収集した情報は適切なセキュリティ対策のもとで管理します</li>
+                        <li>不要になった情報は適切に削除します</li>
+                        <li>第三者への提供は行いません（法令に基づく場合を除く）</li>
+                        <li>テスト環境のため、データは予告なく削除される場合があります</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-gray-800">4. Instagram API の利用について</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p>
+                        当システムは Instagram Basic Display API および Instagram Messaging API を利用しており、
+                        Meta（旧Facebook）のデータポリシーに準拠しています。
+                    </p>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-gray-800">5. お問い合わせ</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p>
+                        本プライバシーポリシーに関するお問い合わせは、システム管理者までご連絡ください。
+                    </p>
+                </div>
+            </section>
+
+            <footer class="border-t pt-6 text-gray-500 text-sm">
+                <p id="lastUpdated">最終更新日: </p>
+                <p class="mt-2">※ 本ポリシーはテスト環境用として作成されており、予告なく変更される場合があります。</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // 現在の日付を表示
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1;
+        const day = now.getDate();
+        document.getElementById('lastUpdated').textContent = `最終更新日: ${year}年${month}月${day}日`;
+    </script>
+</body>
+</html>
